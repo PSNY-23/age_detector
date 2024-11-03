@@ -1,22 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input and Result</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Your Age Detector</h1>
-      <input type="text" id="user-input" placeholder="Enter your age" />
-      <button id="submit-button">Submit</button>
-      <div id="result"></div>
-    </div>
-    <script src="script.js"></script>
-  </body> -->
-<!-- </html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,27 +13,6 @@
       <button id="submit-button">Submit</button>
       <div id="result"></div>
     </div>
-    <script>
-      const userInput = document.getElementById("user-input");
-      const resultDiv = document.getElementById("result");
-      const button = document.getElementById("submit-button");
-
-      button.addEventListener("click", () => {
-        const age = parseFloat(userInput.value); // Convert input to a number
-
-        if (isNaN(age) || age < 0) {
-          // Handle invalid input gracefully
-          resultDiv.textContent = `❌Please enter a valid number for your age.❌`;
-        } else {
-          if (age <= 18) {
-            resultDiv.textContent = `🧸Abhi janam ke khara hue ho babu🧸`;
-          } else if (age >= 18 && age < 100) {
-            resultDiv.textContent = `🧑‍🧑‍🧒‍🧒Ab Bacche nahi rage tum🧑‍🧑‍🧒‍🧒`;
-          } else {
-            resultDiv.textContent = `🧓Hila dala baba ne🧓`;
-          }
-        }
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
