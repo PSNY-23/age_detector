@@ -3,7 +3,7 @@ const resultDiv = document.getElementById("result");
 const button = document.getElementById("submit-button");
 
 button.addEventListener("click", () => {
-  const age = parseFloat(userInput.value); // Convert input to a number
+  const age = parseFloat(userInput.value); 
 
   if (isNaN(age) || age < 0) {
     // Handle invalid input
