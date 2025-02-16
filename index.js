@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
 
   if (isNaN(age) || age < 0) {
     // Handle invalid input
-    resultDiv.textContent = `❌Please enter a valid number for your age.❌`;
+    resultDiv.textContent = `❌Please enter a valid number for your age here.❌`;
   } else {
     if (age === 0) {
       resultDiv.textContent = "🤰Pehle paida to hole bsdk🤰";
